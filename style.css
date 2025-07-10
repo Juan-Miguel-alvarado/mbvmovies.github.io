@@ -153,20 +153,23 @@ body.light .movie {
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 2000;
   opacity: 0;
   transition: all 1s ease;
   gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .info {
+  color: #fff !important;
   width: 500px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 14px;
-  padding: 20px;
+  padding: 16px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
@@ -178,13 +181,13 @@ body.light .movie {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: rgba(255, 255, 255, 0.1);
   border: none;
-  color: #fff;
-  font-size: 24px;
+  color: #838383;
+  font-size: 44px;
   cursor: pointer;
   padding: 8px;
-  border-radius: 50%;
+  border-radius: 100%;
+  background: none;
 }
 
 .more-information img{

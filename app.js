@@ -77,7 +77,7 @@ async function fetchMovies() {
                 <p class="desc">${movie.overview ? movie.overview : "No description..."}</p>
                 <p><strong>Rating:</strong> ${movie.vote_average ? movie.vote_average : "N/A"}</p>
                 <p><strong>Release Date:</strong> ${movie.release_date ? movie.release_date : "N/A"}</p>
-                <button class="close-btn" id="xBtn">X</button>
+                <button class="close-btn" id="xBtn"><i class="bi bi-x"></i></button>
               </div>
             `;
             moviesContainer.appendChild(MoreInformation);
